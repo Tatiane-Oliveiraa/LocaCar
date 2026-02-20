@@ -1,0 +1,64 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Faz o body ocupar toda a altura da tela e organiza os elementos em coluna */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header no topo */
+header {
+    background-color: yellowgreen;
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* Main ocupa o espaço restante entre header e footer */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: yellowgreen;
+    color: white;
+}
+.mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+}
+.status-ativo {
+    color: green;
+    font-weight: bold;
+}
+.status-finalizado {
+    color: gray;
+    font-weight: bold;
+}
+
+/* Footer fixo no final da página */
+footer {
+    background-color: yellowgreen;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
